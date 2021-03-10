@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+
+body {
+    font-family:'Amatic SC', Arial, Helvetica, sans-serif;
+}
+
+.authorization {
+    display:flex;
+    justify-content: center;
+}
+
+.authorization-page {
+    width: 700px;
+    height: 500px;
+    background-color:#FFE1F3;
+    border:1px solid #573992;
+    border-radius: 10px;
+}
+
+.logo {
+    display:flex;
+    justify-content: space-evenly;
+}
+
+.logo h1 {
+    margin:0;
+    padding: 70px 100px 0 80px;
+    font-size: 50px;
+    font-weight: bold;
+    color: #573992;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgb(0 0 0 / 20%);
+}
+
+.logo img {
+    width:180px;
+    height: 180px;
+    border-radius: 10px;
+}
+
+.autorization-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.authorization-form h2, p {
+    margin: 0 0 0 170px;
+    font-size: 34px;
+    font-weight: bold;
+    color: #573992;
+    text-shadow: 0px 4px 4px rgb(0 0 0 / 20%);
+}
+
+.authorization-form input {
+    margin: 0 0 15px 160px;
+    width: 350px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid #573992;
+    box-sizing: border-box;
+    color: #573992;
+    font-family: 'Amatic SC', Arial, Helvetica, sans-serif;
+    font-size: 30px;
+}
+
+.authorization-form p {
+    padding:0;
+    margin: 0 0 10px 400px;
+    font-size: 24px;
+    text-decoration: underline;
+    color: #9299B8;
+}
+
+.authorization-form button {
+    margin: 0 0 30px 160px;
+    width: 350px;
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid #573992;
+    font-family: 'Amatic SC', Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    outline: none;
+    background-color: #F87CB8;
+    text-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    font-size: 36px;
+    font-weight: bold;
+    color: #FFE1F3;
+    stroke-width: 1px;
+    stroke: #573992;
+}
+
+footer {
+    display: flex;
+    margin-top: 20px;
+    width: 700px;
+    height: 90px;
+    background-color: #FFE1F3;
+    border: 1px solid #573992;
+    border-radius: 10px;
+}
+
+
+footer p, a {
+    margin-top: 20px;
+    font-size: 38px;
+    font-weight: bold;
+    color: #573992;
+    text-shadow: 0px 4px 4px rgb(0 0 0 / 20%);
+}
+
