@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import ReactDOM from "react-dom";
 import "./registration.css";
-import Logo_pink from "./images/Logo_pink.png";
+import Logo_pink from "../images/Logo_pink.png";
 
 
 export default class Registration extends Component {

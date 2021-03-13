@@ -1,0 +1,14 @@
+.calendar-page {
+    display:flex;
+}
+
+.calendar {
+    display: flex;
+    flex-direction: column;
+}
+
+.columns {
+    display: flex;
+}
+
+

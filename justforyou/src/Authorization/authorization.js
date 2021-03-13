@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import ReactDOM from "react-dom";
 import "./authorization.css";
-import Logo_pink from "./images/Logo_pink.png";
+import Logo_pink from "../images/Logo_pink.png";
 
 
 export default class Authorization extends Component {

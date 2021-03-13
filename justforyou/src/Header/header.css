@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.header {
+    width:1050px;
+    height: 173px;
+}
+
+.header__high {
+    display:flex;
+    justify-content: flex-start;
+}
+
+.this-week {
+    display: flex;
+    justify-content: space-around;
+    width: 220px;
+    height: 25px;
+    border-radius: 10px;
+    text-align: center; 
+    align-items: center;   
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 20%);
+    margin: 38px 70px 0 10px;
+}
+
+.this-week__icon__dates {
+    padding: 0;
+    font-size: 14px;
+}
+
+.this-week__icon {
+    width:20px;
+    height: 20px;
+}
+
+.legend {
+    width:600px;
+    height: 80px;
+    text-align:left;
+    
+}
+
+.legend__legend {
+    margin: 10px 0 10px 130px;
+}
+
+.legend__time__time {
+    display:flex;
+    width: 550px;
+    justify-content: flex-start;
+}
+
+.legend__time {
+    display: flex;
+    width: 240px;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20px;  
+}
+
+.legend__free-time {
+    display: flex;
+    width: 100px;
+}
+
+.legend__busy-time {
+    display:flex;
+}
+
+.rectangle__white {
+    height: 38px;
+    width:132px;    
+    border-radius: 10px;
+    border:1px solid #FFE1F3;
+    background-color: white;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 20%);
+    text-align: start;
+    padding: 3px 0 0 5px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+.rectangle__blue {
+    height: 38px;
+    width:132px;    
+    border-radius: 10px;
+    border:1px solid #9299B8;
+    background-color: #9299B8;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 20%);
+    text-align: start;
+    padding: 3px 0 0 5px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+.client__name {
+    width:120px;
+}
+
+.client__name__name {
+    text-shadow: 0px 4px 4px rgb(0 0 0 / 20%);
+}
+
+.header__low {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__low__text {
+    margin:30px 0 0 10px;
+    font-size: 26px;
+}
+
+.header__low__button {
+    display: flex;
+    text-align: center;
+    width:200px;
+    height: 50px;
+    align-items: center;    
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 20%);
+    background-color: white;
+    border:unset;
+    outline: none;
+    margin-top: 30px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
