@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.contacts {
+    display: flex;
+}
+
+.contacts-title {
+    color:#573992;
+    margin:40px 0 30px 50px;
+}
+
+.contacts__info {
+    display: flex;
+    color:#573992;
+    margin:20px 50px 10px 50px;
+}
+
+.contacts__logo__image {
+    position: absolute;
+    right:0px;
+    width:150px;
+    height: 150px;
+    z-index: 1;
+}
+
+.socials {
+    display: flex;
+    flex-direction: column;
+    width: 270px;
+    margin-right: 40px;
+}
+
+.contacts__info__instagram {
+    display:flex;
+    margin-bottom: 30px;
+}
+
+.instagram {
+    display:inline-block;
+    width:30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.instagram__info {
+    display:inline-block;
+    color:black;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.instagram__info__screen {
+    display:inline-block;
+    width: 260px;
+    height:300px;
+    border:1px solid #F87CB8;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+.contacts__info__address {
+    padding-left: 90px;
+}
+
+.address {
+    width: 270px;
+    text-align: start;   
+}
+
+.address-text {
+    padding:0;
+    margin:0;
+    color:black;
+    text-align: center;
+    font-size: 14px;
+}
+
+.address-picture {
+    width:250px;
+    height: 300px;
+    border:1px solid #F87CB8;
+    border-radius: 10px;
+    margin: 55px 0 0 15px;
+}
+
+.contacts__info__phonenumber {
+    margin-left: 30px;
+}
+
+.phone {
+    margin-left: 40px;
+    z-index: 2;
+}
+
+.phone-whatsapp {
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.whatsapp {
+    width:30px;
+    height: 30px;
+    display:inline-block;
+    margin-right: 10px;
+}
+
+.whatsapp__number {
+    display:inline-block;
+    color:black;
+}
+
+.whatsapp__master {
+    width:240px;
+    height:300px;
+    border:1px solid #F87CB8;
+    border-radius: 10px;
+    margin: 55px 0 0 25px;
+}

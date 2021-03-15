@@ -9,18 +9,18 @@ body {
     justify-content: center;
 }
 
-.logo {
+.procedur__list__logo {
     display:flex;
     justify-content:start;
     margin-left: 300px;
 }
 
-.logo h1 {
+.procedur__list__logo__text {
     margin-right: 100px;
     padding-top: 130px;
 }
 
-.logo img {
+.procedur__list__logo__image {
     width:250px;
     height: 250px;
 }
@@ -42,39 +42,33 @@ body {
     border-radius: 10px;
 }
 
-.epilation {
+.procedur__list__procedur__epilation {
     font-family: 'Roboto', sans-serif;
-    font-size: 14px;
+    font-size: 20px;
     border:1px solid #573992;
     color: #9299B8;
-    text-align: center;
+    text-align: start;
+    width: 400px;
+    border-radius: 10px;
     text-shadow: 0px 4px 4px rgb(0 0 0 / 20%);
+    outline: none;
+    padding-left: 30px;
+    box-sizing: border-box;
+    margin-bottom: 23px;
+    
 }
 
 .epilation__option {
     font-size: 15px;
 }
 
-.procedur {
-    border:1px solid #573992;
-    font-size: 20px;
-    color: #9299B8;
-    text-shadow: 0px 4px 4px rgb(0 0 0 / 20%);
-    width: 400px;
-    border-radius: 10px;
-    outline: none;
-    padding-left: 30px;
-    box-sizing: border-box;
-    margin-bottom: 15px;
-}
-
-form {
+.procedur__list__procedur__epilation__form {
     display:flex;
     flex-direction: column;
     align-items: center;
 }
 
-.size {
+.procedur__size {
     width:50px;
     height:35px;
     box-sizing: border-box;
@@ -82,12 +76,22 @@ form {
     border:unset;
 }
 
-.delete {
+.procedur__list__procedur__epilation__delete {
     display:flex;
     height: 28px;
+    width: 400px;
+    border:1px solid #573992;
+    font-size: 20px;
+    color: #9299B8;
+    text-shadow: 0px 4px 4px rgb(0 0 0 / 20%);
+    border-radius: 10px;
+    outline: none;
+    padding-left: 30px;
+    box-sizing: border-box;
+    margin-bottom: 23px;
 }
 
-input {
+.procedur__list__input {
     padding:0;
     outline: none;
     font-family: 'Roboto', sans-serif;
@@ -100,15 +104,22 @@ input {
     color:#573992;
 }
 
-.result {
+.procedur__list__procedur__result {
     background-color:#FFE1F3;
     font-weight: bold;
     color:#573992;
     height: 40px;
     padding-top:5px;
+    width: 400px;
+    border: 1px solid #573992;
+    border-radius: 10px;
+    font-size: 22px;
+    text-align: start;
+    padding-left: 30px;
+    box-sizing: border-box;
 }
 
-.button {
+.procedur__list__button {
     display:flex;
     position:absolute;    
     border: 1px solid #573992;
@@ -121,13 +132,13 @@ input {
     width: 300px;
 }
 
-.button img {
+.procedur__list__button__image {
     padding-top: 5px;
     width:60px;
     height:60px;
 }
 
-.button p {
+.procedur__list__button__text {
     margin:0;
     display:inline-block;
     width:250px;

@@ -11,12 +11,12 @@ export default class ProcedurList extends Component {
     <div className="procedur__list">
         <div className="procedur__list pink-background">
             <div className="procedur__list white-background">
-                <div className="procedur__list logo">
-                <h1>Список процедур</h1>
-                    <img src={Logo_white} alt="white logo just for you" />                    
+                <div className="procedur__list__logo">
+                <h1 className="procedur__list__logo__text">Список процедур</h1>
+                    <img className="procedur__list__logo__image"src={Logo_white} alt="white logo just for you" />                    
                 </div>                
-                <form>
-                <select className="procedur__list procedur epilation">
+                <form className="procedur__list__procedur__epilation__form">
+                <select className="procedur__list__procedur__epilation">
                     <option selected="selected">Эпиляция(Выбрать одну зону)</option>
                     <option className="epilation__option">Подмышечные впадины</option>
                     <option className="epilation__option">Бикини глубокое</option>
@@ -29,26 +29,26 @@ export default class ProcedurList extends Component {
                     <option className="epilation__option">Белая линия живота</option>
                     <option className="epilation__option">Лицо/1 зона</option>
                 </select>
-                <select className="procedur__list procedur epilation">
+                <select className="procedur__list__procedur__epilation">
                     <option selected="selected">Эпиляция(Выбрать комплекс зон)</option>
                     <option className="epilation__option">Подмышечные впадины + глубокое бикини</option>
                     <option className="epilation__option">Подмышечные впадины + классическое бикини</option>
-                    <option className="epilation__option"> Подмышечные впадины + классическое бикини + ноги полностью</option>
+                    <option className="epilation__option"> Подмышечные впадины + классическое бикини + голени</option>
                     <option className="epilation__option">Голени + глубокое бикини + подмышечные впадины</option>
                     <option className="epilation__option">Верхняя губа + Подмышечные впадины + белая линия живота + глубокое бикини + голени с коленями</option>
                     <option className="epilation__option">Всё тело:(Верхняя губа + подмышечные впадины + белая линия живота + глубокое бикини + ноги полностью)</option>
                 </select>
-                <div className="procedur__list procedur carbon">Карбоновый пилинг</div>
-                <div className="procedur__list procedur delete">Удаление татуировок
-                    <input type="procedur__list number"/>
-                    <div className="procedur size">см<sup>2</sup></div>
+                <div className="procedur__list__procedur__epilation">Карбоновый пилинг</div>
+                <div className="procedur__list__procedur__epilation__delete">Удаление татуировок
+                    <input className="procedur__list__input" type="text"/>
+                    <div className="procedur__size">см<sup>2</sup></div>
                 </div>
-                <div className="procedur__list procedur consult">Консультация с мастером</div>
-                <div className="procedur__list procedur result">Итого:    рублей</div>                
+                <div className="procedur__list__procedur__epilation">Консультация с мастером</div>
+                <div className="procedur__list__procedur__result">Итого:    рублей</div>                
                 </form>  
-                <button className="procedur__list button"type="submit">
-                    <p>Выбрать дату и время</p>
-                    <img src={Arrow}/>
+                <button className="procedur__list__button" type="submit">
+                    <p className="procedur__list__button__text">Выбрать дату и время</p>
+                    <img className="procedur__list__button__image"src={Arrow}/>
                    </button>              
             </div>
         </div>

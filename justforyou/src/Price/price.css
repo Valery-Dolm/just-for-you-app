@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.price-page {   
+    display: flex;     
+}
+
+.price__part {   
+    margin-left: 10px;
+    width:1050px;
+}
+
+.price__title {    
+    color: #573992;
+    margin:40px 0 30px 50px;
+}
+
+.price__logo__image {
+    position: absolute;
+    right:50px;
+    width:200px;
+    height: 200px;
+}
+
+.price__epilation {
+    margin:0;
+    display: flex;
+    justify-content: flex-start;    
+}
+
+.price__epilation__title {    
+    color: #573992;
+    margin: 40px 0 10px 15px;
+}
+
+.price__name {    
+    list-style-type: none;
+    margin:0 0 8px 0; 
+}
+
+.price__name::before {
+    color:#F87CB8;
+    content: "✦";
+    padding-right: 5px;
+}
+
+.price__name-carbon {
+    margin:0 0 8px 20px; 
+}
+
+.price__name-carbon::before {
+    color:#F87CB8;
+    content: "✦";
+    padding-right: 5px; 
+}
+
+.price__name-remove {
+    margin:0 0 8px 20px;
+}
+
+.price__name-remove::before {
+    color:#F87CB8;
+    content: "✦";
+    padding-right: 5px;
+}
+
+.price__name-consult {
+    margin:0 0 8px 20px;
+}
+
+.price__name-consult::before {
+    color:#F87CB8;
+    content: "✦";
+    padding-right: 5px;
+}
+
+.price__epilation__onezone {
+    padding:0;
+    width: 400px;
+    margin:0 0 8px 20px;    
+}
+
+.price__epilation__complex {
+    padding:0;
+    width: 600px;
+    margin:0 0 8px 20px;
+}
+
+
+
+
+
+
