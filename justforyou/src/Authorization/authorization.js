@@ -7,20 +7,25 @@ import Logo_pink from "../images/Logo_pink.png";
 
 export default class Authorization extends Component {
     state = {
-        value: '',
-        isValid: false,
+        valueName: '',
+        valueSurName: '',
+        valuePass: '',
+        isValidsurname: false,
+        isValidName: false,
+        isValidPass: false
     }
-    clickRegistrationHandler = () => {
-        window.location = '/registration';
+    
+    nameHandler =(event) => {        
+        this.setState({valueName: event.target.value, isValidName: true})
     };
-    changeHandler =(event) => {
-        this.setState({value: event.target.value, isValid: true})
+    surNameHandler = (event) => {
+        this.setState({valueSurName: event.target.value, isValidsurname: true})
     };
     passHandler = (event) => {
-        this.setState({value: event.target.value, isValid: true})
+        this.setState({valuePass: event.target.value, isValidPass: true})
     };    
-  render () {
-    //   const {value, isValid} = this.state;
+    render () {
+      const {valueName, valuePass, isValidName, isValidPass, valueSurName, isValidsurname} = this.state;
     return (
     <div className="authorization">
         <div className="authorization-page">
@@ -30,35 +35,53 @@ export default class Authorization extends Component {
             </div>
             <form className="authorization-form">
                 <h2 className="authorization-form__text">Имя</h2>
-                <input className="authorization-form__input"
-                    minLength="4"
-                    maxLength="30"  
-                    placeholder="Введите имя и фамилию через пробел"
+                <input
+                    className="authorization-form__input"
+                    minLength="3"
+                    maxLength="30"
+                    pattern="[а-яА-ЯёЁ]+"  
+                    placeholder="Введите имя"
                     required
                     name="name"
-                    value={this.state.value} 
-                    onChange={this.changeHandler}
+                    value={valueName} 
+                    onChange={this.nameHandler}
                     type="text"/>
-                <p className={this.state.isValid ? "hint-name" : "invisible"}>*Имя и фамилия должны быть указаны на русском языке</p>                
+                <h2 className="authorization-form__text">Фамилия</h2>
+                <input className="authorization-form__input"
+                    minLength="2"
+                    maxLength="30"
+                    pattern="[а-яА-ЯёЁ]+"  
+                    placeholder="Введите фамилию"
+                    required
+                    name="name"
+                    value={valueSurName} 
+                    onChange={this.surNameHandler}
+                    type="text"/>
+                <p className={isValidName ? "hint-name" : "invisible"}>*Имя и фамилия должны быть указаны на русском языке</p>                
                 <h2 className="authorization-form__text">Пароль</h2>
                 <div className="password">
                 <input className="authorization-form__input"
                     minLength="8"
                     maxLength="10"
                     required
-                    placeholder="Длина пароля не менее 6 символов"
+                    placeholder="Длина пароля не менее 8 символов"
                     name="password"
-                    // value={this.state.value} 
+                    value={valuePass} 
                     onChange={this.passHandler}
                     type="password"/>
                     <p className="authorization-form__forgot__pass">Забыли пароль?</p>
                 </div>             
-                <p className={this.state.isValid ? "hint-pass" : "invisible"}>*Придумайте более сложный пароль</p>                
-                <button className="authorization-form__button" type="submit">Войти</button>
+                <p className={isValidPass ? "hint-pass" : "invisible"}>*Придумайте более сложный пароль</p>                
+                <button
+                    disabled={!(isValidName && isValidPass && isValidsurname)}
+                    className="authorization-form__button"
+                    type="submit">
+                    <Link to="/procedur-list" style={{ textDecoration: 'none'}}>Войти</Link>                       
+                </button>
             </form>
             <footer className="footer">
                 <p className="footer__text">Ещё нет аккаунта?</p>
-                <button onClick={this.clickRegistrationHandler} className="footer__link">Зарегистрируйтесь</button>
+                <p className="footer__link"><Link to="/registration" style={{ textDecoration: 'underline'}}>Зарегистрируйтесь</Link></p>
             </footer>
         </div>      
     </div>

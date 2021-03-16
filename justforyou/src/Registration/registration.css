@@ -23,9 +23,11 @@ body {
 }
 
 .registration-logo__text {
+    display:inline-block;
+    height: 50px;
     margin:0;
-    padding: 70px 100px 0 140px;
-    font-size: 38px;
+    padding: 40px 50px 0 140px;
+    font-size: 34px;
     font-weight: bold;
     color: #573992;
     text-align: center;
@@ -33,12 +35,14 @@ body {
 }
 
 .registration-logo__image {
-    width:180px;
-    height: 180px;
+    width:150px;
+    height: 150px;
     border-radius: 10px;
 }
 
 .registration-form {
+    top: 100px;
+    position: absolute;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -46,29 +50,46 @@ body {
 
 .registration-form__text {
     margin: 0 0 0 170px;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bold;
     color: #573992;
     text-shadow: 0px 4px 4px rgb(0 0 0 / 20%);
 }
 
+.registration-form__remember-me {
+    margin: 0 0 0 330px;
+    font-size: 16px;
+    color:#9299B8;
+    font-weight: bold;    
+    text-shadow: 0px 4px 4px rgb(0 0 0 / 20%);
+}
+
 .registration-form__input {
-    margin: 0 0 20px 160px;
+    margin: 0 0 15px 160px;
     padding-left: 15px;
-    width: 350px;
-    height: 40px;
+    width: 320px;
+    height: 30px;
     outline: none;
     border-radius: 10px;
     border: 1px solid #573992;
     box-sizing: border-box;
     color: #573992;
     font-family: 'Amatic SC', Arial, Helvetica, sans-serif;
-    font-size: 24px;
+    font-size: 16px;
+}
+
+.registration-form__input:hover{
+    cursor:text;
+}
+
+.remember__me {
+    display: flex;
+    align-items: center;
 }
 
 .registration-form__button {
     margin: 10px 0 30px 160px;
-    width: 350px;
+    width: 320px;
     height: 50px;
     border-radius: 10px;
     border: 1px solid #573992;
@@ -81,4 +102,11 @@ body {
     color: #FFE1F3;
     stroke-width: 1px;
     stroke: #573992;
+}
+
+.registration-form__button:disabled {
+    background-color: #FFE1F3;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    color:#9299B8;
+    pointer-events: none;
 }

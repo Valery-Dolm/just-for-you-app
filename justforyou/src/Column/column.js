@@ -1,17 +1,12 @@
 import React, { Component } from 'react';
-import ReactDOM from "react-dom";
 import "./column.css";
+import ColumnItem from "../column-item/column-item";
 
+
+const timelapse = ['10:00', '11:00', '12:00', '13:00', '14:00', '15:00', '16:00', '17:00', '18:00', '19:00',]
 
 export default class Column extends Component {
-  state = {
-    isClicked:false
-  }
-  itemClickHandler = () => {
-    this.setState({isClicked: true})
-  }
   render () {
-    const {isClicked} = this.state;
     return (
     <div className="column">
         <div className="column__day">
@@ -20,20 +15,13 @@ export default class Column extends Component {
     </div>
     <div className="column__schedule">
         <ul className="column__schedule__list">
-            <li onClick={this.itemClickHandler}
-             className={this.state.isClicked ? "column__schedule__item" : "column__schedule__item__dark"}>10:00</li>
-            <li onClick={this.itemClickHandler} className="column__schedule__item">11:00</li>
-            <li onClick={this.itemClickHandler} className="column__schedule__item">12:00</li>
-            <li onClick={this.itemClickHandler} className="column__schedule__item">13:00</li>
-            <li onClick={this.itemClickHandler} className="column__schedule__item">14:00</li>
-            <li onClick={this.itemClickHandler} className="column__schedule__item">15:00</li>
-            <li onClick={this.itemClickHandler} className="column__schedule__item">16:00</li>
-            <li onClick={this.itemClickHandler} className="column__schedule__item">17:00</li>
-            <li onClick={this.itemClickHandler} className="column__schedule__item">18:00</li>
-            <li onClick={this.itemClickHandler} className="column__schedule__item">19:00</li>
+           {timelapse.map((time, i) => {
+             return <ColumnItem time={time} key={i} />
+           })} 
         </ul>
     </div>     
     </div>
     )    
   }  
 }
+

@@ -5,9 +5,9 @@ import {Link} from 'react-router-dom';
 
 
 export default class Menu extends Component {
-  clickCalendarHandler = () => {
-    window.location = '/calendar';
-  };
+  // clickCalendarHandler = () => {
+  //   window.location = '/calendar';
+  // };
   clickPriceHandler = () => {
     window.location = '/price';
   };
@@ -31,14 +31,14 @@ export default class Menu extends Component {
     <div className="menu-page">
         <h1 className="menu-page__menu">Меню</h1>
         <ul className="menu-page__list">
-            <li onClick={this.clickCalendarHandler}className="item">Календарь</li>
-            <li onClick={this.clickPriceHandler} className="item">Прайс</li>
-            <li onClick={this.clickInfoMasterHandler} className="item">Информация о мастере</li>
-            <li onClick={this.clickInfoProcedursHandler} className="item">Информация о процедурах</li>
-            <li onClick={this.clickGalleryHandler} className="item">Галерея</li>
-            <li onClick={this.clickContactsHandler} className="item">Контакты</li>
+            <li className="item"><Link to="/calendar">Календарь</Link></li>
+            <li className="item"><Link to="/price">Прайс</Link></li>
+            <li className="item"><Link to="/info-master">Информация о мастере</Link></li>
+            <li className="item"><Link to="/info-procedurs">Информация о процедурах</Link></li>
+            <li className="item"><Link to="/gallery">Галерея</Link></li>
+            <li className="item"><Link to="/contacts" style={{ textDecoration: 'none'}}>Контакты</Link></li>
         </ul> 
-        <button onClick={this.logOutHandler} className="logOut">Выйти</button>   
+        <button onClick={this.logOutHandler} className="logOut"><Link to="/authorization">Выйти</Link></button>   
     </div>
     )    
   }  

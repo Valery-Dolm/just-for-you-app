@@ -25,7 +25,7 @@ body {
 
 .item {
     color:white;
-    font-size: 18px;
+    font-size: 17px;
     font-weight: bold;
     position: relative;
     bottom: 0;
@@ -34,13 +34,18 @@ body {
     text-shadow: 0px 4px 4px rgb(0 0 0 / 20%);
 }
 
-.item:hover {
+a:-webkit-any-link {
+    color:white;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+a:hover {
     font-size: 20px;
     bottom: 5px;
-    transition: all 0.3s linear;
     text-shadow: 0px 4px 4px rgb(0 0 0 / 20%);
     cursor: pointer;
-    color:#FFE1F3;
+    color:#573992;
 }
 
 .active {
