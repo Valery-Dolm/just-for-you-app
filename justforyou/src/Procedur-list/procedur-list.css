@@ -25,13 +25,13 @@ body {
     height: 250px;
 }
 
-.pink-background {
+.big-background {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 1250px;
     height: 630px;
-    background-color: #FFE1F3;
+    background-color: #dbf6eb;
     border-radius: 10px;
 }
 
@@ -45,7 +45,7 @@ body {
 .procedur__list__procedur__epilation {
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
-    border:1px solid #573992;
+    border:1px solid #1f5a44;
     color: #9299B8;
     text-align: start;
     width: 400px;
@@ -80,7 +80,7 @@ body {
     display:flex;
     height: 28px;
     width: 400px;
-    border:1px solid #573992;
+    border:1px solid #1f5a44;
     font-size: 20px;
     color: #9299B8;
     text-shadow: 0px 4px 4px rgb(0 0 0 / 20%);
@@ -101,17 +101,17 @@ body {
     padding-left: 10px;
     font-size: 16px;
     font-weight: bold;
-    color:#573992;
+    color:#1f5a44;
 }
 
 .procedur__list__procedur__result {
-    background-color:#FFE1F3;
+    background-color:#dbf6eb;
     font-weight: bold;
-    color:#573992;
+    color:#1f5a44;
     height: 40px;
     padding-top:5px;
     width: 400px;
-    border: 1px solid #573992;
+    border: 1px solid #1f5a44;
     border-radius: 10px;
     font-size: 22px;
     text-align: start;
@@ -122,10 +122,10 @@ body {
 .procedur__list__button a:-webkit-any-link {
     display:flex;
     position:absolute;    
-    border: 1px solid #573992;
+    border: 1px solid #1f5a44;
     border-radius: 10px;   
     font-family: 'Roboto', sans-serif;
-    background-color: #F87CB8;    
+    background-color: #69cca7;    
     right: 120px;
     bottom: 80px;
     box-sizing: border-box;

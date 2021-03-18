@@ -13,8 +13,8 @@ body {
 .authorization-page {
     width: 700px;
     height: 530px;
-    background-color:#FFE1F3;
-    border:1px solid #573992;
+    background-color:#bde8db;
+    border:1px solid #1f5a44;
     border-radius: 10px;
 }
 
@@ -26,18 +26,12 @@ body {
 
 .logo__text {
     margin:0;
-    padding: 70px 100px 0 150px;
+    padding: 70px 100px 10px 100px;
     font-size: 38px;
     font-weight: bold;
-    color: #573992;
+    color: #1f5a44;
     text-align: center;
     text-shadow: 0px 4px 4px rgb(0 0 0 / 20%);
-}
-
-.logo__image {
-    width:170px;
-    height: 170px;
-    border-radius: 10px;
 }
 
 .autorization-form {
@@ -50,7 +44,7 @@ body {
     margin: 0 0 0 170px;
     font-size: 24px;
     font-weight: bold;
-    color: #573992;
+    color: #1f5a44;
     text-shadow: 0px 4px 4px rgb(0 0 0 / 20%);
 }
 
@@ -62,9 +56,9 @@ body {
     height: 40px;
     outline: none;
     border-radius: 10px;
-    border: 1px solid #573992;
+    border: 1px solid #1f5a44;
     box-sizing: border-box;
-    color: #573992;
+    color: #1f5a44;
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
 }
@@ -91,25 +85,25 @@ body {
     width: 350px;
     height: 50px;
     border-radius: 10px;
-    border: 1px solid #573992;
+    border: 1px solid #1f5a44;
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
     outline: none;
-    background-color: #F87CB8;
+    background-color: #69cca7;
     text-shadow: 0px 4px 4px rgb(0 0 0 / 25%);    
     font-weight: bold;
-    color: #FFE1F3;
+    color: #bde8db;
 }
 
 .authorization-form__button:disabled {
-    background-color: #FFE1F3;
+    background-color: #dbf6eb;
     box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
     color:#9299B8;
     pointer-events: none;
 }
 
 .authorization-form__button a:-webkit-any-link{
-    color:#573992;
+    color:#1f5a44;
     cursor: pointer;
     text-decoration: none;
     font-size: 24px;
@@ -124,8 +118,8 @@ body {
     margin-top: 10px;
     width: 700px;
     height: 80px;
-    background-color: #FFE1F3;
-    border: 1px solid #573992;
+    background-color: #bde8db;
+    border: 1px solid #1f5a44;
     border-radius: 10px;
 }
 
@@ -134,7 +128,7 @@ body {
     margin-top: 20px;
     font-size: 24px;
     font-weight: bold;
-    color: #573992;
+    color: #1f5a44;
     text-shadow: 0px 4px 4px rgb(0 0 0 / 20%);
 }
 
@@ -150,10 +144,10 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 24px;
     font-weight:bold;
-    color: #573992;
+    color: #1f5a44;
     text-shadow: 0px 4px 4px rgb(0 0 0 / 20%);
     outline: none;
-    background-color: #FFE1F3;
+    background-color: #bde8db;
     text-decoration: underline;
 }
 
@@ -162,14 +156,14 @@ body {
     display:inline-block;
     margin: 1px 0 20px 160px;
     font-size:12px;
-    color: #F87CB8;
+    color: #1f5a44;
 }
 
 .hint-pass {
     display:inline-block;
     margin: 1px 0 20px 160px;
     font-size:12px;
-    color: #F87CB8;
+    color: #1f5a44;
 }
 
 .invisible {

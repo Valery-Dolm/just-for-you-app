@@ -39,8 +39,9 @@ export default class Contacts extends Component {
                         <h2 className="contacts__info__phonenumber">Телефон/WhatsApp</h2>
                         <div className="phone-whatsapp">
                             <img className="whatsapp"src={Whatsapp} alt="logotype of whatsapp"/>
-                            <p className="whatsapp__number">+7 924 722-28-14</p>                            
+                            <p className="whatsapp__number">+7 924 722-28-14</p>                                                       
                         </div> 
+                        <p className="whatsapp__name">Виктория Павлова</p> 
                         <img className="whatsapp__master"src={Vika} alt="photoe of master" />                      
                     </div>            
             </div>

@@ -14,7 +14,7 @@ body {
     color:black;
     text-shadow: 0px 4px 4px rgb(0 0 0 / 20%);
     border-radius: 10px;
-    border:1px solid #FFE1F3;
+    border:1px solid #69cca7;
     font-size: 12px;
     background-color: white;
 }
@@ -35,6 +35,6 @@ body {
 }
 
 .column__schedule__item:hover {
-    color: #F87CB8;
+    color: #69cca7;
     box-shadow: 0px 4px 4px rgb(0 0 0 / 20%);
 }

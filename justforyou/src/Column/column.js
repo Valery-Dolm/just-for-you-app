@@ -16,7 +16,7 @@ export default class Column extends Component {
     <div className="column__schedule">
         <ul className="column__schedule__list">
            {timelapse.map((time, i) => {
-             return <ColumnItem time={time} key={i} />
+             return <ColumnItem key={i} index={i}/>
            })} 
         </ul>
     </div>     

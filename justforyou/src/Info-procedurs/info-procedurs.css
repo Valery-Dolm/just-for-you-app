@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.info-procedurs-page {
+    display:flex;
+}
+
+.info-procedurs-main {
+    width:1100px;
+    display:flex;
+    justify-content: space-around;
+}
+
+.info-procedurs {
+    width:29%;
+    /* border:1px solid red; */
+}
+
+.info-procedurs-header {
+    text-align: center;
+    font-size: 20px;
+}
+
+.info-procedurs-img {
+    width:250px;
+    height:150px;
+    margin: 0 0 15px 35px;
+}
+
+.info-procedurs-text {
+    text-align:justify;
+    font-size: 10px;
+    text-indent: 10px;
+}
+
+.info-procedurs-text-ul {
+    font-size: 10px;
+    list-style-type: none;
+    padding: 0 0 0 10px;
+}
+
+.info-procedurs-text-ul li::before{
+    margin-left: 0;    
+    color:#69cca7;
+    content: "✦";
+    padding-right: 5px;
+}
+
+.instagram__info:-webkit-any-link {
+    font-size: 24px;
+    color:black;
+}

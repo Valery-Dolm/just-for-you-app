@@ -135,7 +135,7 @@ export default class ProcedurList extends Component {
       const {OneZoneSelected, ComplexSelected, result, isCarbon, remTattoValue, isConsult, generalResult} = this.state;
     return (
     <div className="procedur__list">
-        <div className="procedur__list pink-background">
+        <div className="procedur__list big-background">
             <div className="procedur__list white-background">
                 <div className="procedur__list__logo">
                 <h1 className="procedur__list__logo__text">Список процедур</h1>

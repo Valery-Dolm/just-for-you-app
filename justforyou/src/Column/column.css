@@ -14,9 +14,9 @@ body {
 .column__day {    
     width: 140px;
     height: 65px;
-    border: 1px solid #F87CB8;
+    border: 1px solid #69cca7;
     border-radius: 10px; 
-    background-color: #F87CB8;
+    background-color: #69cca7;
     color:white;
     text-align: center;
     margin-bottom: 5px;
@@ -41,9 +41,9 @@ body {
     margin: 0;
     width: 140px;
     height: 395px;
-    border: 1px solid #F87CB8;
+    border: 1px solid #69cca7;
     border-radius: 10px;
-    background-color: #FFE1F3;
+    background-color: #bde8d8;
     text-shadow: 0px 4px 4px rgb(0 0 0 / 20%);
 }
 

@@ -2,18 +2,17 @@ import React, { Component } from 'react';
 import ReactDOM from "react-dom";
 import "./header.css";
 import Arrow from "../images/Arrow_2.png";
+import Arrow1 from "../images/Arrow_3.png"
 import icon from "../images/akar-icons_calendar.png";
-import * as dayjs  from "dayjs";
-import * as localizedFormat from 'dayjs/plugin/localizedFormat';
-dayjs.extend(localizedFormat);
-dayjs.locale('ru');
-let today = dayjs();
+import {connect} from "react-redux";
+import {NextWeekHandler} from '../redux/actions';
+import {PreviousWeekHandler} from '../redux/actions';
+import store from '../redux/store';
 
-export default class Header extends Component {
-  state = {
 
-  }
+class Header extends Component {
   render () {
+    const {today, NextWeekHandler, PreviousWeekHandler} = this.props;
     return (
     <div className="header">
       <div className="header__high">
@@ -39,12 +38,32 @@ export default class Header extends Component {
            </div>
       </div>  
       <div className="header__low">
-            <h1 className="header__low__text">Календарь</h1>                   
-             <button onClick={this.dateHandler} className="header__low__button">Следующая неделя
-                <img src={Arrow} alt="arrow to next week"/>
-            </button>
+            <h1 className="header__low__text">Календарь</h1>
+            <div className="buttons">
+                <button onClick={() => PreviousWeekHandler()} className="header__low__button">
+                    <img src={Arrow1} alt="arrow to previous week"/>
+                    Предыдущая неделя
+                </button>                  
+                <button onClick={() => NextWeekHandler()} className="header__low__button">Следующая неделя
+                    <img src={Arrow} alt="arrow to next week"/>
+                </button>
+            </div>             
       </div>
     </div>
     )    
   }  
 }
+
+const mapStateToProps = (state) => ({
+  today: state.today
+})
+
+const mapDispatchToProps = {
+  NextWeekHandler,
+  PreviousWeekHandler
+}
+ 
+const connectFunction = connect(mapStateToProps, mapDispatchToProps);
+const ConnectedDates = connectFunction(Header);
+
+export default ConnectedDates;

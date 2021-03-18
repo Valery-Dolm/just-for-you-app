@@ -14,7 +14,7 @@ body {
 }
 
 .price__title {    
-    color: #573992;
+    color: #1a4b39;
     margin:40px 0 30px 50px;
 }
 
@@ -32,7 +32,7 @@ body {
 }
 
 .price__epilation__title {    
-    color: #573992;
+    color: #1a4b39;
     margin: 40px 0 10px 15px;
 }
 
@@ -42,7 +42,7 @@ body {
 }
 
 .price__name::before {
-    color:#F87CB8;
+    color:#69cca7;
     content: "✦";
     padding-right: 5px;
 }
@@ -52,7 +52,7 @@ body {
 }
 
 .price__name-carbon::before {
-    color:#F87CB8;
+    color:#69cca7;
     content: "✦";
     padding-right: 5px; 
 }
@@ -62,7 +62,7 @@ body {
 }
 
 .price__name-remove::before {
-    color:#F87CB8;
+    color:#69cca7;
     content: "✦";
     padding-right: 5px;
 }
@@ -72,7 +72,7 @@ body {
 }
 
 .price__name-consult::before {
-    color:#F87CB8;
+    color:#69cca7;
     content: "✦";
     padding-right: 5px;
 }

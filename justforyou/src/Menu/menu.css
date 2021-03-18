@@ -8,10 +8,10 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
-    width:200px;
-    height: 645px;
-    background-color: #9299B8; 
-    margin-right: 10px;   
+    width:210px;
+    height: 650px;
+    background-color: #3fbf9f; 
+    margin-right: 30px;   
 }
 
 .menu-page__menu {
@@ -30,7 +30,7 @@ body {
     position: relative;
     bottom: 0;
     transition: all 0.3s linear;
-    margin-bottom: 35px;
+    margin-bottom: 55px;
     text-shadow: 0px 4px 4px rgb(0 0 0 / 20%);
 }
 
@@ -45,12 +45,7 @@ a:hover {
     bottom: 5px;
     text-shadow: 0px 4px 4px rgb(0 0 0 / 20%);
     cursor: pointer;
-    color:#573992;
-}
-
-.active {
-    font-size: 28px;
-    color:#FFE1F3;
+    color:#1f5a44;
 }
 
 .logOut {
@@ -73,6 +68,6 @@ a:hover {
     font-size: 20px;
     text-shadow: 0px 4px 4px rgb(0 0 0 / 20%);
     cursor: pointer;
-    color:#573992;
-    border:1px solid #573992;
+    color:#1f5a44;
+    border:1px solid #1f5a44;
 }

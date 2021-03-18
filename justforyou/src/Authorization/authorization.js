@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import ReactDOM from "react-dom";
 import "./authorization.css";
 import {Link} from 'react-router-dom';
-import Logo_pink from "../images/Logo_pink.png";
+
 
 
 export default class Authorization extends Component {
@@ -30,8 +30,7 @@ export default class Authorization extends Component {
     <div className="authorization">
         <div className="authorization-page">
             <div className="logo">
-                <h1 className="logo__text">Авторизация</h1>
-                <img className="logo__image"src={Logo_pink} alt="Pink logo just for you"/>
+                <h1 className="logo__text">Авторизация</h1>                
             </div>
             <form className="authorization-form">
                 <h2 className="authorization-form__text">Имя</h2>

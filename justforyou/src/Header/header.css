@@ -75,7 +75,7 @@ body {
     height: 38px;
     width:132px;    
     border-radius: 10px;
-    border:1px solid #FFE1F3;
+    border:1px solid #69cca7;
     background-color: white;
     box-shadow: 0px 4px 4px rgb(0 0 0 / 20%);
     text-align: start;
@@ -117,6 +117,11 @@ body {
     font-size: 26px;
 }
 
+.buttons {
+    display:flex;
+    
+}
+
 .header__low__button {
     display: flex;
     text-align: center;
@@ -128,8 +133,13 @@ body {
     background-color: white;
     border:unset;
     outline: none;
-    margin-top: 30px;
+    margin: 30px 5px 0 15px;
     font-size: 18px;
     font-weight: bold;
 }
+
+.header__low__button:hover {
+    background-color: #bde8db;
+}
+
 

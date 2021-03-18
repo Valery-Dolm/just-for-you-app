@@ -59,7 +59,6 @@ export default class Registration extends Component {
         <div className="registration-page">
             <div className="registration-logo">
                 <h1 className="registration-logo__text">Регистрация</h1>
-                <img className="registration-logo__image"src={Logo_pink} alt="Pink logo just for you"/>
             </div>
             <form className="registration-form"
             onSubmit={this.comparePassHandler}>

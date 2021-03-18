@@ -4,18 +4,11 @@ import Menu from "../Menu/menu";
 import Header from "../Header/header";
 import Column from "../Column/column";
 import "./calendar.css";
-import * as dayjs  from "dayjs";
-import * as localizedFormat from 'dayjs/plugin/localizedFormat';
-import Connect from "react-redux";
-dayjs.extend(localizedFormat);
-dayjs.locale('ru');
-let today = dayjs();
+import {connect} from "react-redux";
 
-export default class Calendar extends Component {
-  state = {
-
-  }
+class Calendar extends Component {  
   render () {
+    const {today} = this.props;
     return (
     <div className="calendar-page">      
           <Menu />
@@ -36,6 +29,12 @@ export default class Calendar extends Component {
   }  
 }
 
-const functionFromConnect = connect(mapStateToProps, mapDispatchToProps);
-const updatedDates = functionFromConnect(dates);
-export default updatedDates;
+const mapStateToProps = (state) => ({
+  today: state.today
+})
+
+const connectFunction = connect(mapStateToProps);
+const ConnectedDates = connectFunction(Calendar);
+
+export default ConnectedDates;
+
