@@ -7,6 +7,7 @@ const timelapse = ['10:00', '11:00', '12:00', '13:00', '14:00', '15:00', '16:00'
 
 export default class Column extends Component {
   render () {
+    const {weekDay} = this.props;
     return (
     <div className="column">
         <div className="column__day">
@@ -16,7 +17,7 @@ export default class Column extends Component {
     <div className="column__schedule">
         <ul className="column__schedule__list">
            {timelapse.map((time, i) => {
-             return <ColumnItem key={i} index={i}/>
+             return <ColumnItem  weekDay={weekDay} key={i} index={i}/>
            })} 
         </ul>
     </div>     

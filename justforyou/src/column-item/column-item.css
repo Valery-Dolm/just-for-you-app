@@ -31,7 +31,8 @@ body {
     border-radius: 10px;
     border:1px solid #9299B8;
     font-size: 12px;
-    background-color: #9299B8; 
+    background-color: #9299B8;
+    pointer-events: none; 
 }
 
 .column__schedule__item:hover {
