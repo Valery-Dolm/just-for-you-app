@@ -98,10 +98,11 @@ body {
     box-sizing: border-box;
 }
 
-.procedur__list__button a:-webkit-any-link {
+.procedur__list__button {
     margin-top: 20px;
     align-items: center;
-    display:flex;   
+    display:flex; 
+    outline: none;  
     border: 1px solid #1f5a44;
     border-radius: 10px;   
     font-family: 'Comfortaa', cursive;
@@ -119,11 +120,13 @@ body {
 .procedur__list__button__text {
     display:inline-block;
     width:350px;
-    color:white;
+    color:#1f5a44;
     font-size: 24px;   
     font-weight: bold;
 }
 
-.procedur__list__button {
-    border:unset;
+.procedur__list__button:disabled {
+    pointer-events: none;
+    background-color: #dbf6eb;
+    border: 1px solid #1f5a44;
 }

@@ -51,7 +51,7 @@ export default class Registration extends Component {
                 <h1 className="registration-header__text">Регистрация</h1>            
             <form className="registration-form"
             onSubmit={this.comparePassHandler}>
-                <h2 className="registration-form__text">Имя</h2>
+                <h2 className="registration-form__text">Имя*</h2>
                 <input
                     className="registration-form__input"
                     minLength="3"
@@ -63,7 +63,7 @@ export default class Registration extends Component {
                     onChange={this.nameHandler}
                     name="name"
                     type="text"/>
-                <h2 className="registration-form__text">Фамилия</h2>
+                <h2 className="registration-form__text">Фамилия*</h2>
                 <input
                     className="registration-form__input"
                     minLength="2"
@@ -75,6 +75,7 @@ export default class Registration extends Component {
                     onChange={this.surnameHandler}
                     name="surname"
                     type="text"/>
+                    <p className="regHint">*Имя и фамилия должны быть указаны на русском языке</p>
                 <h2 className="registration-form__text">E-mail </h2>
                 <input
                     className="registration-form__input"
@@ -85,7 +86,7 @@ export default class Registration extends Component {
                     value={valueMail}
                     pattern='/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i)'
                     type="email"/>
-                <h2 className="registration-form__text">Пароль</h2>
+                <h2 className="registration-form__text">Пароль*</h2>
                 <input
                     className="registration-form__input"
                     name="password"
@@ -93,10 +94,11 @@ export default class Registration extends Component {
                     onChange={this.pass1Handler}
                     placeholder="Введите пароль"
                     value={valuePass1}
-                    min="8"
-                    max="10"
+                    minLength="8"
+                    maxLength="10"
                     type="password"/>
-                <h2 className="registration-form__text">Введите пароль повторно</h2>
+                    <p className="regHint">*Пароль не менее 8 символов</p>
+                <h2 className="registration-form__text">Введите пароль повторно*</h2>
                 <input
                     className="registration-form__input"
                     name="password"
@@ -116,7 +118,9 @@ export default class Registration extends Component {
                     onChange={this.checkHandler}
                     checked={isChecked}/>
                 </div> 
+                <p className="regHint">*Данные поля обязательны для заполнения</p>
                 <button
+                onSubmit={this.comparePassHandler}
                     disabled={!(valueName && valueSurName && valueMail && valuePass1 && valuePass2)} 
                     className="registration-form__button"
                     type="submit">                    

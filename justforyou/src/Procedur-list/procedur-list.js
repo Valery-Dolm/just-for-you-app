@@ -131,6 +131,10 @@ export default class ProcedurList extends Component {
         let general = this.state.resultOneZone + this.state.resultComplex + this.state.resultCarbon + this.state.resultRemoveTattoo + this.state.resultConsult;
         this.setState({generalResult: general})
     };
+    submitProcHandler = (event) => {
+        event.preventDefault();
+        this.props.history.push("/calendar");
+    }
   render () {
       const {OneZoneSelected, ComplexSelected, isCarbon, remTattoValue, isConsult, generalResult} = this.state;
     return (
@@ -139,6 +143,7 @@ export default class ProcedurList extends Component {
         <div className="procedur__list-page">
         <h1 className="procedur__list__header__text">Список процедур</h1>                                    
                 <form 
+                onSubmit={this.submitProcHandler}
                 className="procedur__list__procedur__epilation__form">
                 <select className="procedur__list__procedur__epilation"
                 onChange={this.oneZoneHandler}>
@@ -189,16 +194,15 @@ export default class ProcedurList extends Component {
                         checked={isConsult}/>
                 </label>
                 <div className="procedur__list__procedur__result">Итого:{' '}{generalResult}{' '}рублей</div>                
-                </form>  
                 <button 
-                className="procedur__list__button"
-                type="submit"
-                disabled = {!(OneZoneSelected || ComplexSelected || isCarbon || isConsult || remTattoValue)}>
-                    <Link to="/calendar" style={{ textDecoration: 'none'}}>
+                    className="procedur__list__button"
+                    type="submit"
+                    disabled = {!(OneZoneSelected || ComplexSelected || isCarbon || isConsult || remTattoValue)}>
                     <p className="procedur__list__button__text">Выбрать дату и время</p>
-                    <img className="procedur__list__button__image"src={Arrow}/>
-                    </Link>
+                    <img className="procedur__list__button__image"src={Arrow}/>                   
                 </button> 
+                </form>  
+                
         </div>                
     </div>
     )    

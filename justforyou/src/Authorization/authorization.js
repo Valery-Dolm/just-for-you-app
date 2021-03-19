@@ -23,15 +23,22 @@ export default class Authorization extends Component {
     };
     passHandler = (event) => {
         this.setState({valuePass: event.target.value, isValidPass: true})
-    };    
+    }; 
+    submitHandler =(event) => {
+        event.preventDefault();
+        this.props.history.push("/procedur-list");
+    };   
     render () {
       const {valueName, valuePass, isValidName, isValidPass, valueSurName, isValidsurname} = this.state;
     return (
     <div className="authorization">
         <div className="authorization-page">           
                 <h1 className="header__text">Авторизация</h1>        
-            <form className="authorization-form">
-                <h2 className="authorization-form__text">Имя</h2>
+            <form 
+            onSubmit={this.submitHandler}
+            disabled={!(isValidName && isValidPass && isValidsurname)}
+            className="authorization-form">
+                <h2 className="authorization-form__text">Имя*</h2>
                 <input
                     className="authorization-form__input"
                     minLength="3"
@@ -43,7 +50,7 @@ export default class Authorization extends Component {
                     value={valueName} 
                     onChange={this.nameHandler}
                     type="text"/>
-                <h2 className="authorization-form__text">Фамилия</h2>
+                <h2 className="authorization-form__text">Фамилия*</h2>
                 <input className="authorization-form__input"
                     minLength="2"
                     maxLength="30"
@@ -54,8 +61,8 @@ export default class Authorization extends Component {
                     value={valueSurName} 
                     onChange={this.surNameHandler}
                     type="text"/>
-                {/* <p className={isValidName ? "hint-name" : "invisible"}>*Имя и фамилия должны быть указаны на русском языке</p>                 */}
-                <h2 className="authorization-form__text">Пароль</h2>
+                 <p className="hint">*Имя и фамилия должны быть указаны на русском языке</p>
+                <h2 className="authorization-form__text">Пароль*</h2>
                 <div className="password">
                 <input className="authorization-form__input"
                     minLength="8"
@@ -67,12 +74,12 @@ export default class Authorization extends Component {
                     onChange={this.passHandler}
                     type="password"/>
                 </div>             
-                {/* <p className={isValidPass ? "hint-pass" : "invisible"}>*Придумайте более сложный пароль</p>                 */}
-                <button
+                <p className="hint">*Все поля обязательны для заполнения</p>
+                <button                    
                     disabled={!(isValidName && isValidPass && isValidsurname)}
                     className="authorization-form__button"
                     type="submit">
-                    <Link to="/procedur-list" style={{ textDecoration: 'none'}}>Войти</Link>                       
+                    Войти                       
                 </button>
             </form>
             
