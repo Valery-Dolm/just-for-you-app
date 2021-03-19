@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import ReactDOM from "react-dom";
 import "./header.css";
 import Arrow from "../images/Arrow_2.png";
 import Arrow1 from "../images/Arrow_3.png"
@@ -7,7 +6,6 @@ import icon from "../images/akar-icons_calendar.png";
 import {connect} from "react-redux";
 import {NextWeekHandler} from '../redux/actions';
 import {PreviousWeekHandler} from '../redux/actions';
-import store from '../redux/store';
 
 
 class Header extends Component {
@@ -34,7 +32,7 @@ class Header extends Component {
              </div>             
              </div> 
            <div className="client__name">
-             <h3 className="client__name__name">Имя клиента</h3>
+             <h3 className="client__name__name">Just for you</h3>
            </div>
       </div>  
       <div className="header__low">

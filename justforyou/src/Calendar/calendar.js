@@ -15,13 +15,13 @@ class Calendar extends Component {
       <div className="calendar">
           <Header />
           <div className="columns">
-          <Column title="Понедельник" date={today.day(1).format('DD.MM.YYYY')}/>
-          <Column title="Вторник" date={today.day(2).format('DD.MM.YYYY')}/>
-          <Column title="Среда" date={today.day(3).format('DD.MM.YYYY')}/>
-          <Column title="Четверг" date={today.day(4).format('DD.MM.YYYY')}/>
-          <Column title="Пятница" date={today.day(5).format('DD.MM.YYYY')}/>
-          <Column title="Суббота" date={today.day(6).format('DD.MM.YYYY')}/>
-          <Column title="Воскресенье" date={today.day(7).format('DD.MM.YYYY')}/>
+          <Column weekDay="timesMon" title="Понедельник" date={today.day(1).format('DD.MM.YYYY')}/>
+          <Column weekDay="timesTue" title="Вторник" date={today.day(2).format('DD.MM.YYYY')}/>
+          <Column weekDay="timesWed" title="Среда" date={today.day(3).format('DD.MM.YYYY')}/>
+          <Column weekDay="timesThur" title="Четверг" date={today.day(4).format('DD.MM.YYYY')}/>
+          <Column weekDay="timesFri" title="Пятница" date={today.day(5).format('DD.MM.YYYY')}/>
+          <Column weekDay="timesSat" title="Суббота" date={today.day(6).format('DD.MM.YYYY')}/>
+          <Column weekDay="timesSun" title="Воскресенье" date={today.day(7).format('DD.MM.YYYY')}/>
           </div>
       </div>      
     </div>
