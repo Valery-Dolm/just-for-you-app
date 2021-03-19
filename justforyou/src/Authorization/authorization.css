@@ -1,16 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;600&display=swap');
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Comfortaa', cursive;
 }
 
 .authorization {
-    margin-top: 20px;
+    margin-top: 20px;    
     display:flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .authorization-page {
+    margin: 0 auto ;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
     width: 700px;
     height: 530px;
     background-color:#bde8db;
@@ -18,39 +24,37 @@ body {
     border-radius: 10px;
 }
 
-.logo {
-    display:flex;
-    justify-content: space-around;
-    margin-left: 0;
-}
-
-.logo__text {
-    margin:0;
-    padding: 70px 100px 10px 100px;
+.header__text {
+    font-family: 'Comfortaa', cursive;
+    margin:50px auto 30px auto;
     font-size: 38px;
     font-weight: bold;
     color: #1f5a44;
-    text-align: center;
+    text-align: start;
     text-shadow: 0px 4px 4px rgb(0 0 0 / 20%);
 }
 
 .autorization-form {
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    text-align: center;
+    margin: auto;
 }
 
 .authorization-form__text {
-    margin: 0 0 0 170px;
+    font-family: 'Comfortaa', cursive;
+    margin:0;
     font-size: 24px;
+    text-align: start;
     font-weight: bold;
     color: #1f5a44;
     text-shadow: 0px 4px 4px rgb(0 0 0 / 20%);
 }
 
 .authorization-form__input {
-    display:inline-block;
-    margin: 0 0 10px 160px;
+    display:inline-block; 
+    margin: 2px 0 15px 0;   
     padding-left:5px;
     width: 350px;
     height: 40px;
@@ -59,34 +63,17 @@ body {
     border: 1px solid #1f5a44;
     box-sizing: border-box;
     color: #1f5a44;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Comfortaa', cursive;
     font-size: 18px;
 }
 
-.password {
-    display: flex;
-}
-
-.authorization-form__forgot__pass {
-    display:inline-block;
-    padding:20px 0 0 0;
-    margin: 0 0 20px 10px;
-    font-size: 16px;
-    text-decoration: underline;
-    color: #9299B8;
-    font-weight: bold;
-}
-
 .authorization-form__button {
-    position:absolute;
-    bottom: 100px;
-    left: 290px;
-    margin: 0 0 30px 160px;
+    margin-top: 50px;
     width: 350px;
     height: 50px;
     border-radius: 10px;
     border: 1px solid #1f5a44;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Comfortaa', cursive;
     box-sizing: border-box;
     outline: none;
     background-color: #69cca7;
@@ -98,7 +85,6 @@ body {
 .authorization-form__button:disabled {
     background-color: #dbf6eb;
     box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
-    color:#9299B8;
     pointer-events: none;
 }
 
@@ -111,11 +97,8 @@ body {
 }
 
 .footer {
-    position:absolute;
-    bottom: 10px;
     display: flex;
-    justify-content: space-evenly;
-    margin-top: 10px;
+    justify-content: center;
     width: 700px;
     height: 80px;
     background-color: #bde8db;
@@ -124,24 +107,19 @@ body {
 }
 
 .footer__text {
-    margin:0;
-    margin-top: 20px;
+    font-family: 'Comfortaa', cursive;
     font-size: 24px;
     font-weight: bold;
     color: #1f5a44;
     text-shadow: 0px 4px 4px rgb(0 0 0 / 20%);
 }
 
-.footer__link {
-    margin:0;
-}
+
 
 .footer__link a:-webkit-any-link {
-    display:inline-block;
-    position:absolute;
-    right: 100px;
-    bottom:32px;
-    font-family: 'Roboto', sans-serif;
+    display:inline-block; 
+    margin-top: 7px;  
+    font-family: 'Comfortaa', cursive;
     font-size: 24px;
     font-weight:bold;
     color: #1f5a44;
@@ -152,21 +130,18 @@ body {
 }
 
 
-.hint-name {
+/* .hint-name {
     display:inline-block;
     margin: 1px 0 20px 160px;
     font-size:12px;
     color: #1f5a44;
-}
+} */
 
-.hint-pass {
+/* .hint-pass {
     display:inline-block;
     margin: 1px 0 20px 160px;
     font-size:12px;
     color: #1f5a44;
-}
+} */
 
-.invisible {
-    display: none;
-}
 

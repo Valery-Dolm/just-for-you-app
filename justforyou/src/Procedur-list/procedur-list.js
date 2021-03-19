@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import "./procedur-list.css";
-import Logo_white from "../images/Logo_white.png";
 import Arrow from "../images/Arrow_1.png";
 import {Link} from 'react-router-dom';
+import Menu from "../Menu/menu";
 
 const prices = {
     "epil": 0,
@@ -132,15 +132,12 @@ export default class ProcedurList extends Component {
         this.setState({generalResult: general})
     };
   render () {
-      const {OneZoneSelected, ComplexSelected, result, isCarbon, remTattoValue, isConsult, generalResult} = this.state;
+      const {OneZoneSelected, ComplexSelected, isCarbon, remTattoValue, isConsult, generalResult} = this.state;
     return (
     <div className="procedur__list">
-        <div className="procedur__list big-background">
-            <div className="procedur__list white-background">
-                <div className="procedur__list__logo">
-                <h1 className="procedur__list__logo__text">Список процедур</h1>
-                    <img className="procedur__list__logo__image"src={Logo_white} alt="white logo just for you" />                    
-                </div>                
+        <Menu />
+        <div className="procedur__list-page">
+        <h1 className="procedur__list__header__text">Список процедур</h1>                                    
                 <form 
                 className="procedur__list__procedur__epilation__form">
                 <select className="procedur__list__procedur__epilation"
@@ -169,7 +166,7 @@ export default class ProcedurList extends Component {
                 </select>
                 <label className="procedur__list__procedur__epilation">
                     Карбоновый пилинг
-                    <input
+                    <input className="checkbox"
                     onChange={this.carbonHandler}
                         type="checkbox"
                         checked={isCarbon}/>
@@ -186,11 +183,12 @@ export default class ProcedurList extends Component {
                 <label className="procedur__list__procedur__epilation">
                 Консультация с мастером
                     <input
+                        className="checkbox"
                         onChange={this.consultHandler}
                         type="checkbox"
                         checked={isConsult}/>
                 </label>
-                <div className="procedur__list__procedur__result">Итого:{''}{generalResult}{''}рублей</div>                
+                <div className="procedur__list__procedur__result">Итого:{' '}{generalResult}{' '}рублей</div>                
                 </form>  
                 <button 
                 className="procedur__list__button"
@@ -200,9 +198,8 @@ export default class ProcedurList extends Component {
                     <p className="procedur__list__button__text">Выбрать дату и время</p>
                     <img className="procedur__list__button__image"src={Arrow}/>
                     </Link>
-                </button>              
-            </div>
-        </div>
+                </button> 
+        </div>                
     </div>
     )    
   }  

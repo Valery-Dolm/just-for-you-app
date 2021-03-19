@@ -24,14 +24,14 @@ const initialState = {
         {
             id: 2,
             time: "12:00",
-            clientName: 'Валерия',
-            status: true
+            clientName: '',
+            status: false
         },
         {
             id: 3,
             time: "13:00",
-            clientName: 'Анна',
-            status: true
+            clientName: '',
+            status: false
         },
         {
             id: 4,
@@ -48,14 +48,14 @@ const initialState = {
         {
             id: 6,
             time: "16:00",
-            clientName: 'Татьяна',
-            status: true
+            clientName: '',
+            status: false
         },
         {
             id: 7,
             time: "17:00",
-            clientName: 'Ксения',
-            status: true
+            clientName: '',
+            status: false
         },
         {
             id: 8,
@@ -66,8 +66,8 @@ const initialState = {
         {
             id: 9,
             time: "19:00",
-            clientName: 'Ирина',
-            status: true
+            clientName: '',
+            status: false
         },
     ],
     timesTue: [
@@ -75,7 +75,7 @@ const initialState = {
             id: 0,
             time: "10:00",
             clientName: '',
-            status: true
+            status: false
         },
         {
             id: 1,
@@ -99,13 +99,13 @@ const initialState = {
             id: 4,
             time: "14:00",
             clientName: '',
-            status: true
+            status: false
         },
         {
             id: 5,
             time: "15:00",
             clientName: '',
-            status: true
+            status: false
         },
         {
             id: 6,
@@ -117,7 +117,7 @@ const initialState = {
             id: 7,
             time: "17:00",
             clientName: '',
-            status: true
+            status: false
         },
         {
             id: 8,
@@ -129,7 +129,7 @@ const initialState = {
             id: 9,
             time: "19:00",
             clientName: '',
-            status: true
+            status: false
         },
     ],
     timesWed: [
@@ -137,13 +137,13 @@ const initialState = {
             id: 0,
             time: "10:00",
             clientName: '',
-            status: true
+            status: false
         },
         {
             id: 1,
             time: "11:00",
             clientName: '',
-            status: true
+            status: false
         },
         {
             id: 2,
@@ -155,7 +155,7 @@ const initialState = {
             id: 3,
             time: "13:00",
             clientName: '',
-            status: true
+            status: false
         },
         {
             id: 4,
@@ -185,13 +185,13 @@ const initialState = {
             id: 8,
             time: "18:00",
             clientName: '',
-            status: true
+            status: false
         },
         {
             id: 9,
             time: "19:00",
             clientName: '',
-            status: true
+            status: false
         },
     ],
     timesThur: [
@@ -211,7 +211,7 @@ const initialState = {
             id: 2,
             time: "12:00",
             clientName: '',
-            status: true
+            status: false
         },
         {
             id: 3,
@@ -241,7 +241,7 @@ const initialState = {
             id: 7,
             time: "17:00",
             clientName: '',
-            status: true
+            status: false
         },
         {
             id: 8,
@@ -253,7 +253,7 @@ const initialState = {
             id: 9,
             time: "19:00",
             clientName: '',
-            status: true
+            status: false
         },
     ],
     timesFri: [
@@ -261,13 +261,13 @@ const initialState = {
             id: 0,
             time: "10:00",
             clientName: '',
-            status: true
+            status: false
         },
         {
             id: 1,
             time: "11:00",
             clientName: '',
-            status: true
+            status: false
         },
         {
             id: 2,
@@ -315,7 +315,7 @@ const initialState = {
             id: 9,
             time: "19:00",
             clientName: '',
-            status: true
+            status: false
         },
     ],
     timesSat: [
@@ -341,13 +341,13 @@ const initialState = {
             id: 3,
             time: "13:00",
             clientName: '',
-            status: true
+            status: false
         },
         {
             id: 4,
             time: "14:00",
             clientName: '',
-            status: true
+            status: false
         },
         {
             id: 5,
@@ -359,7 +359,7 @@ const initialState = {
             id: 6,
             time: "16:00",
             clientName: '',
-            status: true
+            status: false
         },
         {
             id: 7,
@@ -377,7 +377,7 @@ const initialState = {
             id: 9,
             time: "19:00",
             clientName: '',
-            status: true
+            status: false
         },
     ],
     timesSun: [
@@ -403,19 +403,19 @@ const initialState = {
             id: 3,
             time: "13:00",
             clientName: '',
-            status: true
+            status: false
         },
         {
             id: 4,
             time: "14:00",
             clientName: '',
-            status: true
+            status: false
         },
         {
             id: 5,
             time: "15:00",
             clientName: '',
-            status: true
+            status: false
         },
         {
             id: 6,

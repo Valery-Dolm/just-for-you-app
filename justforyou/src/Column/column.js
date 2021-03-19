@@ -17,7 +17,7 @@ export default class Column extends Component {
     <div className="column__schedule">
         <ul className="column__schedule__list">
            {timelapse.map((time, i) => {
-             return <ColumnItem  weekDay={weekDay} key={i} index={i}/>
+             return <ColumnItem date={this.props.date} weekDay={weekDay} key={i} index={i}/>
            })} 
         </ul>
     </div>     

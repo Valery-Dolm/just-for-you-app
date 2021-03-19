@@ -1,64 +1,40 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;600&display=swap');
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Comfortaa', cursive;
 }
 
-.procedur-list {    
+.procedur__list {    
     display:flex;
-    justify-content: center;
 }
 
-.procedur__list__logo {
-    display:flex;
-    justify-content:start;
-    margin-left: 300px;
+.procedur__list-page {
+    margin-left: 40px;
 }
 
-.procedur__list__logo__text {
-    margin-right: 100px;
-    padding-top: 130px;
-}
-
-.procedur__list__logo__image {
-    width:250px;
-    height: 250px;
-}
-
-.big-background {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 1250px;
-    height: 630px;
-    background-color: #dbf6eb;
-    border-radius: 10px;
-}
-
-.white-background {
-    width: 1150px;
-    height: 580px;
-    background-color: white;
-    border-radius: 10px;
+.procedur__list__header__text {
+    margin: 40px 0 40px 60px;
+    font-family: 'Comfortaa', cursive;
 }
 
 .procedur__list__procedur__epilation {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Comfortaa', cursive;
+    margin: 10px 0 20px 0;
+    padding: 8px 0 5px 10px;
     font-size: 20px;
     border:1px solid #1f5a44;
     color: #9299B8;
     text-align: start;
-    width: 400px;
+    width: 450px;
+    height:40px;
     border-radius: 10px;
     text-shadow: 0px 4px 4px rgb(0 0 0 / 20%);
-    outline: none;
-    padding-left: 30px;
-    box-sizing: border-box;
-    margin-bottom: 23px;
-    
+    outline: none;    
+    box-sizing: border-box;    
 }
 
 .epilation__option {
+    font-family: 'Comfortaa', cursive;
     font-size: 15px;
 }
 
@@ -70,35 +46,39 @@ body {
 
 .procedur__size {
     width:50px;
-    height:35px;
+    height:25px;
     box-sizing: border-box;
     font-size:18px;
     border:unset;
 }
 
-.procedur__list__procedur__epilation__delete {
+.checkbox {
+    margin: 0 0 0 15px;
+}
+
+.procedur__list__procedur__epilation__delete {    
     display:flex;
-    height: 28px;
-    width: 400px;
+    height: 40px;
+    width: 450px;
+    align-items: center;
+    padding: 8px 0 5px 10px;
+    margin: 10px 0 20px 0;
     border:1px solid #1f5a44;
     font-size: 20px;
     color: #9299B8;
     text-shadow: 0px 4px 4px rgb(0 0 0 / 20%);
     border-radius: 10px;
     outline: none;
-    padding-left: 30px;
-    box-sizing: border-box;
-    margin-bottom: 23px;
+    box-sizing: border-box;   
 }
 
 .procedur__list__input {
-    padding:0;
     outline: none;
-    font-family: 'Roboto', sans-serif;
+    padding-left: 10px;
+    font-family: 'Comfortaa', cursive;
     width:30px;
     height:25px;
     border: unset;
-    padding-left: 10px;
     font-size: 16px;
     font-weight: bold;
     color:#1f5a44;
@@ -108,43 +88,42 @@ body {
     background-color:#dbf6eb;
     font-weight: bold;
     color:#1f5a44;
-    height: 40px;
-    padding-top:5px;
-    width: 400px;
+    height: 50px;
+    padding: 10px 10px 0 10px;
+    width: 450px;
     border: 1px solid #1f5a44;
     border-radius: 10px;
     font-size: 22px;
     text-align: start;
-    padding-left: 30px;
     box-sizing: border-box;
 }
 
 .procedur__list__button a:-webkit-any-link {
-    display:flex;
-    position:absolute;    
+    margin-top: 20px;
+    align-items: center;
+    display:flex;   
     border: 1px solid #1f5a44;
     border-radius: 10px;   
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Comfortaa', cursive;
     background-color: #69cca7;    
-    right: 120px;
-    bottom: 80px;
     box-sizing: border-box;
-    width: 300px;
+    width: 450px;
 }
 
 .procedur__list__button__image {
     display:inline-block;
-    padding-top: 5px;
     width:60px;
     height:60px;
 }
 
 .procedur__list__button__text {
-    margin:0;
     display:inline-block;
-    width:250px;
-    padding-top: 5px;
+    width:350px;
     color:white;
     font-size: 24px;   
     font-weight: bold;
+}
+
+.procedur__list__button {
+    border:unset;
 }

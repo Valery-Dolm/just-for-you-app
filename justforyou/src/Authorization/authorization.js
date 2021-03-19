@@ -28,10 +28,8 @@ export default class Authorization extends Component {
       const {valueName, valuePass, isValidName, isValidPass, valueSurName, isValidsurname} = this.state;
     return (
     <div className="authorization">
-        <div className="authorization-page">
-            <div className="logo">
-                <h1 className="logo__text">Авторизация</h1>                
-            </div>
+        <div className="authorization-page">           
+                <h1 className="header__text">Авторизация</h1>        
             <form className="authorization-form">
                 <h2 className="authorization-form__text">Имя</h2>
                 <input
@@ -56,21 +54,20 @@ export default class Authorization extends Component {
                     value={valueSurName} 
                     onChange={this.surNameHandler}
                     type="text"/>
-                <p className={isValidName ? "hint-name" : "invisible"}>*Имя и фамилия должны быть указаны на русском языке</p>                
+                {/* <p className={isValidName ? "hint-name" : "invisible"}>*Имя и фамилия должны быть указаны на русском языке</p>                 */}
                 <h2 className="authorization-form__text">Пароль</h2>
                 <div className="password">
                 <input className="authorization-form__input"
                     minLength="8"
                     maxLength="10"
                     required
-                    placeholder="Длина пароля не менее 8 символов"
+                    placeholder="Введите ваш пароль"
                     name="password"
                     value={valuePass} 
                     onChange={this.passHandler}
                     type="password"/>
-                    <p className="authorization-form__forgot__pass">Забыли пароль?</p>
                 </div>             
-                <p className={isValidPass ? "hint-pass" : "invisible"}>*Придумайте более сложный пароль</p>                
+                {/* <p className={isValidPass ? "hint-pass" : "invisible"}>*Придумайте более сложный пароль</p>                 */}
                 <button
                     disabled={!(isValidName && isValidPass && isValidsurname)}
                     className="authorization-form__button"
@@ -78,11 +75,12 @@ export default class Authorization extends Component {
                     <Link to="/procedur-list" style={{ textDecoration: 'none'}}>Войти</Link>                       
                 </button>
             </form>
-            <footer className="footer">
+            
+        </div>
+        <footer className="footer">
                 <p className="footer__text">Ещё нет аккаунта?</p>
                 <p className="footer__link"><Link to="/registration" style={{ textDecoration: 'underline'}}>Зарегистрируйтесь</Link></p>
-            </footer>
-        </div>      
+            </footer>      
     </div>
     )    
   }  

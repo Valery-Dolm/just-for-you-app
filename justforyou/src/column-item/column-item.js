@@ -5,13 +5,14 @@ import "./column-item.css";
 import Swal from 'sweetalert2';
 import 'sweetalert2/dist/sweetalert2.min.css';
 import * as dayjs  from "dayjs";
+
 import * as localizedFormat from 'dayjs/plugin/localizedFormat';
 dayjs.extend(localizedFormat);
 dayjs.locale('ru');
 
 class ColumnItem extends Component {
-  handleClick =() => {
-    const {pickTimeByClient, time, weekDay, today} = this.props;
+  handleClick = () => {
+    const {pickTimeByClient, time, weekDay, date} = this.props;
     pickTimeByClient(time.id, weekDay);
     const swalWithBootstrapButtons = Swal.mixin({
       customClass: {
@@ -22,17 +23,16 @@ class ColumnItem extends Component {
     })
     
     swalWithBootstrapButtons.fire({
-      title: 'Подтвердить запись и покинуть сайт?',
+      title: 'Подтвердить запись?',
       showCancelButton: true,
       confirmButtonText: 'Да',
       cancelButtonText: 'Нет, я выберу другую дату',
       reverseButtons: true
     }).then((result) => {
       if (result.isConfirmed) {
-        swalWithBootstrapButtons.fire(
-          
+        swalWithBootstrapButtons.fire(          
           'Ваша запись подтверждена',
-          `Вы записаны на ${today.day()} дату в ${time.time}`,
+          `Вы записаны на ${date} дату в ${time.time}`,
           'success'
         )
       } else if (
@@ -44,6 +44,7 @@ class ColumnItem extends Component {
           'Вы можете выбрать другую дату',
           'error'
         )
+        pickTimeByClient(time.id, weekDay);
       }
     })
   }
@@ -52,7 +53,7 @@ class ColumnItem extends Component {
     return ( 
   <li onClick={() => this.handleClick()}
         className={time.status === true? "column__schedule__item__dark" : "column__schedule__item"}>
-          {time.time}</li>     
+          {time.time}  {time.clientName}</li>     
     )    
   }  
 }
@@ -60,7 +61,7 @@ class ColumnItem extends Component {
 const mapStateToProps = (state, props) => {
   
   return {
-    time: state[props.weekDay][props.index]
+    time: state[props.weekDay][props.index],
   }
 }
 

@@ -1,20 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;600&display=swap');
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Comfortaa', cursive;
 }
 
 .menu-page {
     display: flex;
     align-items: center;
     flex-direction: column;
-    width:210px;
+    width:230px;
     height: 650px;
     background-color: #3fbf9f; 
     margin-right: 30px;   
 }
 
 .menu-page__menu {
+    font-family: 'Comfortaa', cursive;
     font-size: 44px;
     text-shadow: 0px 4px 4px rgb(0 0 0 / 20%);
 }
@@ -24,14 +25,14 @@ body {
 }
 
 .item {
+    font-family: 'Comfortaa', cursive;
     color:white;
-    font-size: 17px;
+    font-size: 16px;
     font-weight: bold;
     position: relative;
     bottom: 0;
     transition: all 0.3s linear;
     margin-bottom: 55px;
-    text-shadow: 0px 4px 4px rgb(0 0 0 / 20%);
 }
 
 a:-webkit-any-link {
@@ -41,7 +42,7 @@ a:-webkit-any-link {
 }
 
 a:hover {
-    font-size: 20px;
+    font-size: 18px;
     bottom: 5px;
     text-shadow: 0px 4px 4px rgb(0 0 0 / 20%);
     cursor: pointer;
@@ -52,7 +53,7 @@ a:hover {
     position:absolute;
     left:40px;
     bottom: 20px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Comfortaa', cursive;
     width: 100px;
     height: 30px;
     outline: none;

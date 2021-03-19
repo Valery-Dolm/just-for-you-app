@@ -1,12 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;600&display=swap');
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Comfortaa', cursive;
 }
 
 .header {
-    width:1050px;
+    width:980px;
     height: 173px;
 }
 
@@ -28,6 +27,7 @@ body {
 }
 
 .this-week__icon__dates {
+    font-family: 'Comfortaa', cursive;
     padding: 0;
     font-size: 14px;
 }
@@ -45,7 +45,8 @@ body {
 }
 
 .legend__legend {
-    margin: 10px 0 10px 130px;
+    font-family: 'Comfortaa', cursive;
+    margin: 10px 0 5px 80px;
 }
 
 .legend__time__time {
@@ -63,6 +64,7 @@ body {
 }
 
 .legend__free-time {
+    font-family: 'Comfortaa', cursive;
     display: flex;
     width: 100px;
 }
@@ -70,30 +72,35 @@ body {
 .legend__busy-time {
     display:flex;
 }
+.legend__busy-time__text {
+    font-family: 'Comfortaa', cursive; 
+}
 
 .rectangle__white {
-    height: 38px;
-    width:132px;    
+    font-family: 'Comfortaa', cursive;
+    height: 36px;
+    width:120px;    
     border-radius: 10px;
     border:1px solid #69cca7;
     background-color: white;
     box-shadow: 0px 4px 4px rgb(0 0 0 / 20%);
     text-align: start;
-    padding: 3px 0 0 5px;
+    padding: 0 0 0 5px;
     font-size: 12px;
     font-weight: bold;
     margin-right: 8px;
 }
 
 .rectangle__blue {
-    height: 38px;
-    width:132px;    
+    font-family: 'Comfortaa', cursive;
+    height: 36px;
+    width:130px;    
     border-radius: 10px;
     border:1px solid #9299B8;
     background-color: #9299B8;
     box-shadow: 0px 4px 4px rgb(0 0 0 / 20%);
     text-align: start;
-    padding: 3px 0 0 5px;
+    padding: 0 0 0 5px;
     font-size: 12px;
     font-weight: bold;
     margin-right: 8px;
@@ -104,6 +111,7 @@ body {
 }
 
 .client__name__name {
+    font-family: 'Comfortaa', cursive;
     text-shadow: 0px 4px 4px rgb(0 0 0 / 20%);
 }
 
@@ -123,6 +131,7 @@ body {
 }
 
 .header__low__button {
+    font-family: 'Comfortaa', cursive;
     display: flex;
     text-align: center;
     width:200px;

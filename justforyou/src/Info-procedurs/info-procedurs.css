@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;600&display=swap');
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Comfortaa', cursive;
 }
 
 .info-procedurs-page {
@@ -9,28 +9,29 @@ body {
 }
 
 .info-procedurs-main {
-    width:1100px;
+    width:1000px;
     display:flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .info-procedurs {
-    width:29%;
-    /* border:1px solid red; */
+    width: 310px;
 }
 
 .info-procedurs-header {
+    font-family: 'Comfortaa', cursive;
     text-align: center;
-    font-size: 20px;
+    font-size: 17px;
 }
 
 .info-procedurs-img {
     width:250px;
     height:150px;
-    margin: 0 0 15px 35px;
+    margin-left: 30px;
 }
 
 .info-procedurs-text {
+    font-family: 'Comfortaa', cursive;
     text-align:justify;
     font-size: 10px;
     text-indent: 10px;
