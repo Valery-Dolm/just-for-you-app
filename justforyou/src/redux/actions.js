@@ -1,7 +1,7 @@
-export const pickTimeByClient = (id, weekDay) => ({
+export const pickTimeByClient = (date) => ({
     type: 'PICK_TIME',
     payload: {
-        id, weekDay
+        date
     }
 })
 

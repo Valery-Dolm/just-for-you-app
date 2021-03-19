@@ -12,8 +12,8 @@ dayjs.locale('ru');
 
 class ColumnItem extends Component {
   handleClick = () => {
-    const {pickTimeByClient, time, weekDay, date} = this.props;
-    pickTimeByClient(time.id, weekDay);
+    const {pickTimeByClient, time} = this.props;
+    pickTimeByClient(time.date);
     const swalWithBootstrapButtons = Swal.mixin({
       customClass: {
         confirmButton: 'btn btn-success',
@@ -32,11 +32,10 @@ class ColumnItem extends Component {
       if (result.isConfirmed) {
         swalWithBootstrapButtons.fire(          
           'Ваша запись подтверждена',
-          `Вы записаны на ${date} дату в ${time.time}`,
+          `Вы записаны на ${time.date.format('DD.MM.YYYY')} дату в ${time.date.format('HH:mm')}`,
           'success'
         )
       } else if (
-        /* Read more about handling dismissals below */
         result.dismiss === Swal.DismissReason.cancel
       ) {
         swalWithBootstrapButtons.fire(
@@ -44,32 +43,48 @@ class ColumnItem extends Component {
           'Вы можете выбрать другую дату',
           'error'
         )
-        pickTimeByClient(time.id, weekDay);
+        pickTimeByClient(time.date);
       }
     })
   }
   render () {
-    const { time, weekDay} = this.props;
+    const { time } = this.props;
     return ( 
   <li onClick={() => this.handleClick()}
         className={time.status === true? "column__schedule__item__dark" : "column__schedule__item"}>
-          {time.time}  {time.clientName}</li>     
+          {time.date.format('HH-mm')}  {time.name}</li>     
     )    
   }  
 }
 
 const mapStateToProps = (state, props) => {
-  
-  return {
-    time: state[props.weekDay][props.index],
+  const param = state.times.find((item) => {
+    const dateString = props.date;
+    const timeString = props.time;
+    
+    if((item.date.format('HH:mm') === props.time) && (item.date.format('DD.MM.YYYY') === props.date)) {
+      return true;
+    } else {
+      return false;
+    }
+  })
+  if (!param) {
+    return {
+      time: {
+        name: 'Запись закрыта',
+        date: state.times[0].date,
+        status: false
+      }
+    }
+  }  return {
+    time: param
   }
+  
 }
-
 
 const mapDispatchToProps = {
   pickTimeByClient
-}
- 
+} 
 const connectFunction = connect(mapStateToProps, mapDispatchToProps);
 const ConnectedDates = connectFunction(ColumnItem);
 

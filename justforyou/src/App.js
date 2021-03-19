@@ -21,7 +21,8 @@ export default class App extends Component {
         <Route path="/calendar" exact component={Calendar}/>
         <Route path="/price" exact component={Price}/>
         <Route path="/info-procedurs" exact component={Infoprocedurs}/> 
-        <Route path="/contacts" exact component={Contacts}/>        
+        <Route path="/contacts" exact component={Contacts}/> 
+        <Route path="/" exact component={Authorization}/>       
     </div>
     )    
   }  
